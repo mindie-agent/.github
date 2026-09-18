@@ -12,5 +12,5 @@ or performance; attach those separately if the change claims them.
       tracked files
 - [ ] dependency direction unchanged (see CONTRIBUTING.md), or this is the
       owning repo's own contract
-- [ ] cross-repo work has a tracking issue in `vllm-ascend-workspace/.github`
+- [ ] cross-repo work has a tracking issue in `mindie-agent/.github`
 - [ ] anything described as implemented is implemented; gaps are written down

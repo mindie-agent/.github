@@ -5,7 +5,7 @@ title: ''
 labels: bug
 ---
 
-**Which unit** — scaffold / remote-dev / vaws-coordinator / vaws-top / vaws-knowledge, or unknown
+**Which unit** — Harness adapter / remote-dev / coordinator / npu-top / knowledge, or unknown
 
 **Coordinate** — fill in what you know; write `unknown` rather than guessing:
 

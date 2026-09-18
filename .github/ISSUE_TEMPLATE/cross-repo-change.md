@@ -21,4 +21,4 @@ labels: cross-repo
 
 - [ ] `remote-dev` gains no knowledge of a consumer's private state
 - [ ] no new dependency pointing from a producer toward a consumer
-- [ ] `vaws-top` gains no write path to a device, container or lease
+- [ ] `npu-top` gains no write path to a device, container or lease
