@@ -6,9 +6,9 @@
 
 Domain-focused agents, reliable remote tools, and a knowledge and experience feedback loop for Ascend development.
 
-**[Get started with the Codex plugin](https://github.com/mindie-agent/mindie-agent-codex)** · [Architecture](https://github.com/mindie-agent/mindie-agent/issues/195) · [Real NPU acceptance](https://github.com/mindie-agent/mindie-agent-codex/blob/main/docs/real-acceptance-2026-09-18.md)
+**[Get started with the Codex plugin](https://github.com/mindie-agent/mindie-agent-codex)** · [Architecture](https://github.com/mindie-agent/mindie-agent/blob/main/docs/architecture.md) · [Real NPU acceptance](https://github.com/mindie-agent/mindie-agent-codex/blob/main/docs/real-acceptance-2026-09-18.md)
 
-Codex and the knowledge service run locally. Remote Ascend containers provide device execution through remote-dev. A normal task's final reply can produce reusable experience; independent tasks apply it, and a separate judge's usefulness feedback affects later retrieval.
+Codex and the knowledge service run locally. Remote Ascend containers provide device execution through remote-dev. Eligible native tasks use existing contribution choice and project scope. Complete redacted public messages are the body authority; an internal model supplies retrieval navigation. Later tasks optionally read experience or give usefulness feedback, without mandatory retrieval or judging steps.
 
 | Repository | Role |
 |---|---|
@@ -23,4 +23,4 @@ Codex and the knowledge service run locally. Remote Ascend containers provide de
 
 Renamed in place on 2026-09-18; repository IDs, issues, PRs and history remain intact. Packages, imports and owned configuration now use the new names; the former workspace entry and aliases are removed.
 
-The first single-domain loop has actual CLI/MCP/hook and NPU evidence. Grok event delivery and cross-domain Desktop controls still need acceptance. The current feed remains on the knowledge repository's knowledge/vllm-ascend branch; consolidating domain publication is next.
+The current feed is [knowledge-vllm-ascend/main](https://github.com/mindie-agent/knowledge-vllm-ascend/tree/main). Codex and its upstream/downstream components are undergoing systematic prerelease review. Earlier native, NPU and Bot results apply only to their recorded versions; see [current implementation status](https://github.com/mindie-agent/mindie-agent/blob/main/docs/implementation-status.md). Kimi and Claude Code retain independent older pins and require their own port and acceptance.
