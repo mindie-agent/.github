@@ -38,6 +38,19 @@
 
 ---
 
+## 🔥 装好之后怎么用？ / How to Use After Installation
+
+- **🧠 手动输入 `/mindie-agent`（唤醒知识、经验与 Skill 系统）**：在遇到昇腾推理排障、算子开发或性能调优问题时，直接输入 `/mindie-agent`（Codex 中也可使用 `$mindie-agent`）并描述问题，即可唤醒昇腾 Skill 体系并检索历史实战经验：
+  ```text
+  /mindie-agent 我们在昇腾 A3 上跑 DeepSeek MLA 遇到 ACLGraph 捕获失败，帮我结合知识库里的历史排障经验定位根因并修复。
+  ```
+- **⚡ 默认自动触发 `remote-dev`（无需斜杠命令，日常对话直连远端 NPU）**：`remote-dev` 作为常驻 MCP 工具默认就绪。日常对话中只要提到远端服务器或容器，Agent 就会自动调用远端读写、打补丁与后台作业工具：
+  ```text
+  连上远端机器 192.0.2.21 上的 vllm-dev 容器，看下 /workspace/vllm-ascend 当前分支的报错日志并跑一下对应的 pytest。
+  ```
+
+---
+
 ## 🌟 为什么需要 MindIE Agent？ / Why MindIE Agent?
 
 通用编程大模型写常规代码很强，但在昇腾（Ascend）NPU 上跑大模型推理（如 `vLLM-Ascend`、CANN 算子适配、远端多卡调试、精度对齐与 Profiling）时，往往会遇到**不懂昇腾报错、SSH 长任务容易断、踩过的坑下次还会再踩**三大痛点。
