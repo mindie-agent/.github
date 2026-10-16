@@ -40,7 +40,9 @@
 
 ## 🔥 装好之后怎么用？ / How to Use After Installation
 
-- **🧠 手动输入 `/mindie-agent`（唤醒知识、经验与 Skill 系统）**：在遇到昇腾推理排障、算子开发或性能调优问题时，直接输入 `/mindie-agent`（Codex 中也可使用 `$mindie-agent`）并描述问题，即可唤醒昇腾 Skill 体系并检索历史实战经验：
+MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文渐进式披露**的设计理念——你只需要知道 **`/mindie-agent`** 这一个入口，无需记忆任何复杂的子命令：
+
+- **🧠 手动输入 `/mindie-agent`（唤醒知识、经验与 Skill 系统）**：遇到昇腾推理排障、算子开发或性能调优问题时，直接输入 `/mindie-agent`（Codex 中也可使用 `$mindie-agent`）并描述问题（配置与状态查看也同样包裹在 `/mindie-agent` 中，由 Agent 按需渐进式加载上下文处理）：
   ```text
   /mindie-agent 我们在昇腾 A3 上跑 DeepSeek MLA 遇到 ACLGraph 捕获失败，帮我结合知识库里的历史排障经验定位根因并修复。
   ```
@@ -48,6 +50,7 @@
   ```text
   连上远端机器 192.0.2.21 上的 vllm-dev 容器，看下 /workspace/vllm-ascend 当前分支的报错日志并跑一下对应的 pytest。
   ```
+- **🔄 社区经验闭环开启后每次默认自动生效（无需在对话中特意提及）**：安装或首次配置时选择开启社区贡献后，每次任务结束（`Stop`）时都会在后台**全自动默认完成**脱敏（确定性规则 + Gitleaks）与知识 PR 沉淀，平时提问完全不需要多说一句“帮我把经验沉淀下来”。
 
 ---
 
