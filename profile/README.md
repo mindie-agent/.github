@@ -2,57 +2,79 @@
   <img src="https://raw.githubusercontent.com/mindie-agent/mindie-agent/main/assets/brand/mindie-agent-logo.png" alt="MindIE Agent logo" width="128" height="128">
 </p>
 
-# MindIE Agent
+<h1 align="center">MindIE Agent</h1>
 
-**面向昇腾（Ascend）推理工程的智能体插件、领域知识库与远程开发工具链**  
-*Agent plugins, curated domain knowledge, and remote execution tooling for Ascend inference engineering.*
+<p align="center">
+  <b>让你的 AI 编程助手秒懂昇腾（Ascend）NPU 与大模型推理工程</b><br/>
+  <i>Turn Claude Code, OpenAI Codex CLI, and Kimi Code into battle-tested Ascend NPU & LLM inference engineers.</i>
+</p>
 
-**[项目主入口 / Main Entry](https://github.com/mindie-agent/mindie-agent)** · **[Codex 插件](https://github.com/mindie-agent/mindie-agent-codex)** · **[Claude Code 插件](https://github.com/mindie-agent/mindie-agent-cc)** · **[Awesome MindIE Skills](https://github.com/mindie-agent/awesome-mindie-skills)** · **[vLLM-Ascend Workspace](https://github.com/mindie-agent/vllm-ascend-workspace)**
+<p align="center">
+  <a href="https://github.com/mindie-agent/mindie-agent"><img src="https://img.shields.io/badge/Release-v0.0.1-blue?style=flat-square" alt="Release v0.0.1"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent-cc"><img src="https://img.shields.io/badge/Claude_Code-Plugin_Ready-D97757?style=flat-square" alt="Claude Code"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent-codex"><img src="https://img.shields.io/badge/OpenAI_Codex-Plugin_Ready-10A37F?style=flat-square" alt="OpenAI Codex"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent-kimi"><img src="https://img.shields.io/badge/Kimi_Code-Adapter_Ready-6366F1?style=flat-square" alt="Kimi Code"></a>
+  <a href="https://github.com/mindie-agent/awesome-mindie-skills"><img src="https://img.shields.io/badge/Ascend_Skills-Curated-F59E0B?style=flat-square" alt="Awesome MindIE Skills"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/mindie-agent/mindie-agent"><b>项目主入口 (Main Repo)</b></a> ·
+  <a href="https://github.com/mindie-agent/mindie-agent-cc"><b>Claude Code 插件</b></a> ·
+  <a href="https://github.com/mindie-agent/mindie-agent-codex"><b>Codex 插件</b></a> ·
+  <a href="https://github.com/mindie-agent/awesome-mindie-skills"><b>Awesome MindIE Skills</b></a> ·
+  <a href="https://github.com/mindie-agent/vllm-ascend-workspace"><b>vLLM-Ascend Workspace</b></a>
+</p>
 
 ---
 
-## 简介 / Overview
+## ⚡ 一句话无感安装 / One-Sentence Agent-Native Install
 
-**MindIE Agent** 将昇腾推理工程（如 `vLLM-Ascend`、CANN 算子适配、远端 NPU 容器调试与精度/性能定位）所需的领域知识、经验沉淀闭环与 SSH 远端执行能力，以轻量插件的形式直接注入开发者日常使用的 AI 编程客户端（OpenAI Codex CLI、Claude Code、Kimi Code）。
+不需要手翻长篇配置文档——直接把下面这句话发给你正在使用的 **Claude Code**、**Codex CLI** 或 **Kimi Code**，让你的 Agent 自动完成检测、安装与配置：
 
-**MindIE Agent** brings Ascend inference engineering capabilities—curated `vLLM-Ascend` domain knowledge, local task experience indexing, privacy-redacted community sharing, and SSH-backed remote NPU execution—directly into your daily AI coding agent (OpenAI Codex CLI, Claude Code, and Kimi Code) without taking over your local repository or breaking existing workflows.
-
----
-
-## 快速体验 / Quick Start
-
-- **使用 OpenAI Codex CLI**：前往 [`mindie-agent-codex`](https://github.com/mindie-agent/mindie-agent-codex) 一行命令安装插件。
-- **使用 Claude Code**：前往 [`mindie-agent-cc`](https://github.com/mindie-agent/mindie-agent-cc) 一行命令安装插件。
-- **按需选用独立 Agent Skills**：浏览 [`awesome-mindie-skills`](https://github.com/mindie-agent/awesome-mindie-skills) 技能目录。
-- **搭建本地多任务开发工作区**：使用 [`vllm-ascend-workspace`](https://github.com/mindie-agent/vllm-ascend-workspace) 初始化 `vllm` + `vllm-ascend` 独立 Git Worktree 工作区。
+```text
+帮我安装一下这个 https://github.com/mindie-agent/mindie-agent
+```
+*(English: `Please install https://github.com/mindie-agent/mindie-agent for me`)*
 
 ---
 
-## 仓库全景 / Repository Ecosystem
+## 🌟 为什么需要 MindIE Agent？ / Why MindIE Agent?
 
-### 入口与社区生态 / Entry & Community
+通用编程大模型写常规代码很强，但在昇腾（Ascend）NPU 上跑大模型推理（如 `vLLM-Ascend`、CANN 算子适配、远端多卡调试、精度对齐与 Profiling）时，往往会遇到**不懂昇腾报错、SSH 长任务容易断、踩过的坑下次还会再踩**三大痛点。
 
-| 仓库 / Repository | 定位与职责 / Role |
+**MindIE Agent** 不要求你更换顺手的客户端，而是通过原生插件把四大核心能力直接装进你的终端：
+1. **远端昇腾开发（`remote-dev`）**：通过 SSH 直接读写远端文件、投递后台长任务、实时流式看日志与拉回 Profiling 产物。
+2. **实战知识与经验闭环（`knowledge` + `knowledge-vllm-ascend`）**：检索经过验证的 `vLLM-Ascend` 排障知识包；本地排障成功后自动通过 Gitleaks 与确定性隐私规则脱敏沉淀。
+3. **NPU 集群看板与卡池调度（`npu-top` + `coordinator`）**：一眼看清多节点 NPU 显存/算力占用，并为并发任务自动分配独占 NPU 租约。
+4. **可定位结构化诊断（`diagnostics`）**：有界本地诊断日志与可选、去重的白名单故障自动上报。
+
+---
+
+## 🗺️ 开源仓库全景 / Repository Ecosystem
+
+### 1. 主入口与开发者生态（Entry & Developer Ecosystem）
+
+| 仓库 / Repository | 定位与核心用途 / What It Does |
 |---|---|
-| [`mindie-agent`](https://github.com/mindie-agent/mindie-agent) | 产品总入口、整体架构、领域边界、九条核心设计原则与版本发布记录 / Product entry, architecture, design principles, and release records |
-| [`awesome-mindie-skills`](https://github.com/mindie-agent/awesome-mindie-skills) | 面向昇腾推理工程的开源 Agent Skills 精选目录与质量验证规范 / Curated catalogue of Agent Skills for Ascend inference engineering |
-| [`vllm-ascend-workspace`](https://github.com/mindie-agent/vllm-ascend-workspace) | 面向 `vllm` 与 `vllm-ascend` 的轻量本地开发工作区脚手架（支持独立任务 Worktree）/ Lightweight local workspace scaffold for vLLM and vLLM-Ascend development |
+| [`mindie-agent`](https://github.com/mindie-agent/mindie-agent) | **总入口**：产品架构、工程设计原则、一句话 Agent 自动安装协议与统一版本记录 |
+| [`awesome-mindie-skills`](https://github.com/mindie-agent/awesome-mindie-skills) | **开箱即用技能库**：面向 `vLLM-Ascend` 排障、昇腾 NPU 运维与算子开发的精选 Agent Skills |
+| [`vllm-ascend-workspace`](https://github.com/mindie-agent/vllm-ascend-workspace) | **本地多任务工作区**：一键拉起 `vllm` + `vllm-ascend` 独立 Git Worktree 的开发脚手架 |
 
-### 宿主插件适配层 / Harness Plugins
+### 2. 原生客户端插件（Native Agent Plugins）
 
-| 仓库 / Repository | 定位与职责 / Role |
+| 仓库 / Repository | 定位与核心用途 / What It Does |
 |---|---|
-| [`mindie-agent-codex`](https://github.com/mindie-agent/mindie-agent-codex) | OpenAI Codex CLI 原生插件（`v0.0.1` 已发布）/ Native OpenAI Codex CLI plugin (`v0.0.1` released) |
-| [`mindie-agent-cc`](https://github.com/mindie-agent/mindie-agent-cc) | Claude Code 原生插件（`v0.0.1` 已发布）/ Native Claude Code plugin (`v0.0.1` released) |
-| [`mindie-agent-kimi`](https://github.com/mindie-agent/mindie-agent-kimi) | Kimi Code 原生适配插件（源码已对齐共享运行时）/ Native Kimi Code adapter |
+| [`mindie-agent-cc`](https://github.com/mindie-agent/mindie-agent-cc) | **Claude Code 原生插件**（`v0.0.1` 已发布）：支持 macOS、原生 Windows 与 WSL |
+| [`mindie-agent-codex`](https://github.com/mindie-agent/mindie-agent-codex) | **OpenAI Codex CLI 原生插件**（`v0.0.1` 已发布）：支持 macOS、原生 Windows 与 WSL |
+| [`mindie-agent-kimi`](https://github.com/mindie-agent/mindie-agent-kimi) | **Kimi Code 原生适配插件**：提供 `/skill:mindie` 技能、远端开发与知识闭环 |
 
-### 共享运行时与领域知识 / Shared Runtimes & Knowledge
+### 3. 核心运行时组件与公共知识库（Core Runtimes & Public Knowledge）
 
-| 仓库 / Repository | 定位与职责 / Role |
+| 仓库 / Repository | 定位与核心用途 / What It Does |
 |---|---|
-| [`knowledge`](https://github.com/mindie-agent/knowledge) | 共享知识与经验运行时：公共知识同步、本地私有经验检索、脱敏外发与独立有用性反馈 / Shared knowledge, local experience indexing, redaction, and feedback runtime |
-| [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) | `vLLM-Ascend` 公共工程知识包仓库（结构化 `PACKAGE.md` 与受控资料包）/ Curated public engineering knowledge packages for `vLLM-Ascend` |
-| [`remote-dev`](https://github.com/mindie-agent/remote-dev) | 基于 SSH 的远端开发运行时与 MCP 服务（文件读写、补丁、后台作业、产物同步与安全守卫）/ SSH-backed remote development CLI and MCP server |
-| [`diagnostics`](https://github.com/mindie-agent/diagnostics) | 轻量结构化故障诊断、隐私脱敏支持包导出与显式授权 Issue 上报组件 / Structured fault diagnostics, redacted support bundles, and opt-in issue reporting |
-| [`npu-top`](https://github.com/mindie-agent/npu-top) | 仅监听本地回环的昇腾 NPU 集群只读观测工具（提供 TUI、Web、CLI 与 MCP 接口）/ Loopback-only Ascend NPU fleet monitor (TUI, Web, CLI, and MCP) |
-| [`coordinator`](https://github.com/mindie-agent/coordinator) | 昇腾主机可选本地回环 MCP 协调器（任务租约、就绪容器池、独占 NPU 绑定与受管作业）/ Opt-in loopback MCP coordinator for Ascend runtime pools and NPU bindings |
+| [`knowledge`](https://github.com/mindie-agent/knowledge) | **知识与经验引擎**：本地经验提取、多层隐私脱敏、小模型目录生成、双层混合检索与社区分享 |
+| [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) | **`vLLM-Ascend` 公共知识库**：经审核脱敏的真实昇腾排障与推理工程 Markdown 知识包 |
+| [`remote-dev`](https://github.com/mindie-agent/remote-dev) | **SSH 远端开发引擎**：远端文件读写、补丁应用、受管持久后台作业与构建产物同步 |
+| [`coordinator`](https://github.com/mindie-agent/coordinator) | **昇腾 NPU 协调器**：多任务 NPU 独占租约分配、就绪容器池与受管作业调度 |
+| [`npu-top`](https://github.com/mindie-agent/npu-top) | **NPU 集群状态看板**：仅监听本地回环的昇腾 NPU 实时监控（支持 TUI、Web、CLI 与 MCP） |
+| [`diagnostics`](https://github.com/mindie-agent/diagnostics) | **结构化诊断组件**：有界本地日志、错误定位编号与独立授权的 GitHub Issue 故障上报 |
