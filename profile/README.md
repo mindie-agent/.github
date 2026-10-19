@@ -95,3 +95,13 @@ MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文渐进式�
 | [`coordinator`](https://github.com/mindie-agent/coordinator) | **昇腾 NPU 协调器**：多任务 NPU 独占租约分配、就绪容器池与受管作业调度 |
 | [`npu-top`](https://github.com/mindie-agent/npu-top) | **NPU 集群状态看板**：仅监听本地回环的昇腾 NPU 实时监控（支持 TUI、Web、CLI 与 MCP） |
 | [`diagnostics`](https://github.com/mindie-agent/diagnostics) | **结构化诊断组件**：有界本地日志、错误定位编号与独立授权的 GitHub Issue 故障上报 |
+
+---
+
+## 📊 开源仓库与下载统计 / Repository Statistics
+
+<p align="center">
+  <a href="https://github.com/mindie-agent/mindie-agent/blob/telemetry-data/README.md">
+    <img src="https://raw.githubusercontent.com/mindie-agent/mindie-agent/telemetry-data/dashboard.zh.svg" alt="MindIE Agent 开源仓库与下载统计" width="100%">
+  </a>
+</p>
