@@ -10,10 +10,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mindie-agent/mindie-agent"><img src="https://img.shields.io/badge/Release-v0.0.1-blue?style=flat-square" alt="Release v0.0.1"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.0.2.md"><img src="https://img.shields.io/badge/Release-v0.0.2-7045F5?style=flat-square" alt="Release v0.0.2"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-cc"><img src="https://img.shields.io/badge/Claude_Code-Plugin_Ready-D97757?style=flat-square" alt="Claude Code"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-codex"><img src="https://img.shields.io/badge/OpenAI_Codex-Plugin_Ready-10A37F?style=flat-square" alt="OpenAI Codex"></a>
-  <a href="https://github.com/mindie-agent/mindie-agent-kimi"><img src="https://img.shields.io/badge/Kimi_Code-Adapter_Ready-6366F1?style=flat-square" alt="Kimi Code"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent-kimi"><img src="https://img.shields.io/badge/Kimi_Code-Plugin_Ready-2563EB?style=flat-square" alt="Kimi Code"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent-dsh"><img src="https://img.shields.io/badge/DeepSeek_Harness-Plugin_Ready-0EA5E9?style=flat-square" alt="DeepSeek Harness"></a>
   <a href="https://github.com/mindie-agent/awesome-mindie-skills"><img src="https://img.shields.io/badge/Ascend_AI_Infra-vLLM--Ascend_%7C_AscendC_%7C_Triton-F59E0B?style=flat-square" alt="Ascend AI Infra Skills"></a>
 </p>
 
@@ -21,15 +22,17 @@
   <a href="https://github.com/mindie-agent/mindie-agent"><b>项目主入口 (Main Repo)</b></a> ·
   <a href="https://github.com/mindie-agent/mindie-agent-cc"><b>Claude Code 插件</b></a> ·
   <a href="https://github.com/mindie-agent/mindie-agent-codex"><b>Codex 插件</b></a> ·
-  <a href="https://github.com/mindie-agent/awesome-mindie-skills"><b>Awesome MindIE Skills</b></a> ·
-  <a href="https://github.com/mindie-agent/vllm-ascend-workspace"><b>vLLM-Ascend Workspace</b></a>
+  <a href="https://github.com/mindie-agent/mindie-agent-kimi"><b>Kimi Code 插件</b></a> ·
+  <a href="https://github.com/mindie-agent/mindie-agent-dsh"><b>DSH 插件</b></a> ·
+  <a href="https://github.com/mindie-agent/mindie-bench"><b>MindIE Bench</b></a> ·
+  <a href="https://github.com/mindie-agent/awesome-mindie-skills"><b>Awesome MindIE Skills</b></a>
 </p>
 
 ---
 
 ## ⚡ 一句话无感安装 / One-Sentence Agent-Native Install
 
-不需要手翻长篇配置文档——直接把下面这句话发给你正在使用的 **Claude Code**、**Codex CLI** 或 **Kimi Code**，让你的 Agent 自动完成检测、安装与配置：
+不需要手翻长篇配置文档——直接把下面这句话发给你正在使用的 **Claude Code**、**OpenAI Codex CLI**、**Kimi Code** 或 **DeepSeek Harness (DSH)**，让你的 Agent 自动完成检测、安装与配置：
 
 ```text
 帮我安装一下这个 https://github.com/mindie-agent/mindie-agent
@@ -60,20 +63,22 @@ MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文渐进式�
 
 **MindIE Agent** 的核心目标是为**昇腾 NPU 上的 AI Infra 全流程（设计 / 开发 / 测试 / 调优）提供统一的 Agent 能力底座**。目前生态已率先沉淀了面向 **`vLLM-Ascend`、`AscendC` 与 `Triton` 算子开发及测试**的知识库与技能体系，并正在持续扩展至更广泛的昇腾基础软件领域：
 
-1. **远端昇腾开发与测试闭环（`remote-dev`）**：通过 SSH 直接在远端昇腾容器内读写文件、应用补丁、投递长耗时编译/测试作业、流式查看日志并拉回 Profiling 产物。
-2. **领域知识与研发经验飞轮（`knowledge` + `knowledge-vllm-ascend`）**：检索经过实机验证的设计规范、开发实践与测试案例；本地研发完成后自动通过 Gitleaks 与确定性隐私规则脱敏沉淀。
-3. **NPU 集群看板与卡池调度（`npu-top` + `coordinator`）**：一眼看清多节点 NPU 显存/算力占用，并为并发开发与测试任务自动分配独占 NPU 租约。
-4. **可定位结构化诊断（`diagnostics`）**：有界本地诊断日志与可选、去重的白名单故障自动上报。
+1. **远端昇腾开发与测试闭环（`remote-dev`）**：通过 SSH 直接在远端昇腾容器内读写文件、应用补丁、投递长耗时编译/测试作业、流式查看日志并拉回构建与测试产物。
+2. **领域知识与研发经验飞轮（`knowledge` + `knowledge-vllm-ascend` / `knowledge-operators`）**：按框架版本、硬件与适用条件检索分级知识单元；本地研发完成后通过确定性隐私规则脱敏提炼，经审核沉淀入库。
+3. **实测性能剖析与四层理论仿真求解（`profiler` + `sim`）**：原地只读解析昇腾 Profiling 产物、关联 Host-Device 异步调用与跨 Run 对比（`mindie-profiler`），并结合多型号 SKU 硬件规格、算子微阶段流水、子图融合与整网并行开展四层理论边界求解（`mindie-sim`）。
+4. **NPU 集群看板与卡池调度（`npu-top` + `coordinator`）**：一眼看清多节点 NPU 显存/算力占用与 90 天利用率热力图，并为多 Agent 并发任务自动探测环境、绑定容器与分配独占 NPU/端口租约。
+5. **可定位结构化诊断与真机基准评测（`diagnostics` + `mindie-bench`）**：提供有界本地诊断日志与可选白名单去重故障上报，并通过固定任务与真机基准持续度量任务结题率、跨任务复用收益与端到端总工程成本。
 
 ---
 
 ## 🗺️ 开源仓库全景 / Repository Ecosystem
 
-### 1. 主入口与开发者生态（Entry & Developer Ecosystem）
+### 1. 主入口、评测基准与开发者生态（Entry, Benchmarks & Developer Ecosystem）
 
 | 仓库 / Repository | 定位与核心用途 / What It Does |
 |---|---|
 | [`mindie-agent`](https://github.com/mindie-agent/mindie-agent) | **总入口**：产品架构、工程设计原则、一句话 Agent 自动安装协议与统一版本记录 |
+| [`mindie-bench`](https://github.com/mindie-agent/mindie-bench) | **真机基准与评测框架**：固定任务与 Oracle、隔离宿主运行、组件级基准、跨任务知识复用及端到端总工程成本评测 |
 | [`awesome-mindie-skills`](https://github.com/mindie-agent/awesome-mindie-skills) | **开箱即用技能库**：覆盖昇腾 AI Infra 开发、测试、算子实现（`AscendC` / `Triton`）与 `vLLM-Ascend` 工程的精选 Agent Skills（持续扩展中） |
 | [`vllm-ascend-workspace`](https://github.com/mindie-agent/vllm-ascend-workspace) | **本地多任务工作区**：一键拉起 `vllm` + `vllm-ascend` 独立 Git Worktree 的开发与测试脚手架 |
 
@@ -81,20 +86,24 @@ MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文渐进式�
 
 | 仓库 / Repository | 定位与核心用途 / What It Does |
 |---|---|
-| [`mindie-agent-cc`](https://github.com/mindie-agent/mindie-agent-cc) | **Claude Code 原生插件**（`v0.0.1` 已发布）：支持 macOS、原生 Windows 与 WSL |
-| [`mindie-agent-codex`](https://github.com/mindie-agent/mindie-agent-codex) | **OpenAI Codex CLI 原生插件**（`v0.0.1` 已发布）：支持 macOS、原生 Windows 与 WSL |
-| [`mindie-agent-kimi`](https://github.com/mindie-agent/mindie-agent-kimi) | **Kimi Code 原生适配插件**：提供 `/mindie-agent` 统一入口、远端 NPU 开发测试与知识闭环 |
+| [`mindie-agent-cc`](https://github.com/mindie-agent/mindie-agent-cc) | **Claude Code 原生插件**（`v0.0.2` 已发布）：支持 macOS、原生 Windows 与 WSL |
+| [`mindie-agent-codex`](https://github.com/mindie-agent/mindie-agent-codex) | **OpenAI Codex CLI 原生插件**（`v0.0.2` 已发布）：支持 macOS、原生 Windows 与 WSL |
+| [`mindie-agent-kimi`](https://github.com/mindie-agent/mindie-agent-kimi) | **Kimi Code CLI 原生插件**（`v0.0.2` 已发布）：提供 `/mindie-agent` 统一入口、代数原子更新、远端 NPU 开发测试与知识闭环 |
+| [`mindie-agent-dsh`](https://github.com/mindie-agent/mindie-agent-dsh) | **DeepSeek Harness (DSH) 原生插件**（`v0.0.2` 已发布）：复用宿主插件机制组合提供 `/mindie-agent` Skill、领域知识检索、生命周期桥接与 `remote-dev` |
 
-### 3. 核心运行时组件与公共知识库（Core Runtimes & Public Knowledge）
+### 3. 核心运行时组件与公共知识库（Core Runtimes & Public Knowledge Corpora）
 
 | 仓库 / Repository | 定位与核心用途 / What It Does |
 |---|---|
-| [`knowledge`](https://github.com/mindie-agent/knowledge) | **知识与经验引擎**：本地经验提取、双层隐私脱敏、小模型目录生成、BM25 检索与社区共建 |
-| [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) | **昇腾领域公共知识库**：经审核脱敏的 `vLLM-Ascend`、算子开发与 NPU 测试实战 Markdown 知识包（更多领域持续接入） |
-| [`remote-dev`](https://github.com/mindie-agent/remote-dev) | **SSH 远端开发引擎**：远端文件读写、补丁应用、受管持久后台作业与构建/测试产物同步 |
-| [`coordinator`](https://github.com/mindie-agent/coordinator) | **昇腾 NPU 协调器**：多任务 NPU 独占租约分配、就绪容器池与受管作业调度 |
-| [`npu-top`](https://github.com/mindie-agent/npu-top) | **NPU 集群状态看板**：仅监听本地回环的昇腾 NPU 实时监控（支持 TUI、Web、CLI 与 MCP） |
-| [`diagnostics`](https://github.com/mindie-agent/diagnostics) | **结构化诊断组件**：有界本地日志、错误定位编号与独立授权的 GitHub Issue 故障上报 |
+| [`knowledge`](https://github.com/mindie-agent/knowledge) | **知识与经验引擎（`mindie-knowledge`）**：分级知识单元、条件检索、领域路由、精确修订反馈、双层隐私脱敏与经审核的社区发布闭环 |
+| [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) | **`vLLM-Ascend` 领域公共知识库**：带源码修订绑定、适用条件与实证证据的 `vLLM-Ascend` 特性开发、适配与调优知识单元 |
+| [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) | **昇腾算子领域公共知识库**：带源码修订绑定、适用条件与实证证据的 `AscendC`、`Triton` 与 CANN 算子实现及流水调优知识单元 |
+| [`remote-dev`](https://github.com/mindie-agent/remote-dev) | **SSH 远端开发引擎（`remote-dev`）**：远端文件读写、精确补丁、容器直连、受管持久后台作业与构建/测试产物同步 |
+| [`coordinator`](https://github.com/mindie-agent/coordinator) | **昇腾 NPU 环境协调器（`mindie-coordinator`）**：SSH 主机/免密/多机互通、就绪容器池绑定与开通、NPU/挂载探测（`mindie_probe`）、独占 NPU/端口租约仲裁（`mindie_lease`）与受管任务调度 |
+| [`profiler`](https://github.com/mindie-agent/profiler) | **昇腾实测性能剖析组件（`mindie-profiler`）**：昇腾 Profiling 受控采集、`inventory / analyze / correlate / compare / sql` 原地只读解析、显存证据提取与跨 Run 对比 CLI |
+| [`sim`](https://github.com/mindie-agent/sim) | **昇腾四层仿真与边界求解器（`mindie-sim`）**：多型号 A2/A3/A5 `DeviceCapabilityProfile`、7 类全路径 `D2D`/`H2D`/`D2H`/`RH2D`/`RD2H` 传输边界、算子微阶段周期依赖图求解、Phase 0 子图融合分析与整网并行推演 |
+| [`npu-top`](https://github.com/mindie-agent/npu-top) | **NPU 集群状态看板（`npu-top`）**：仅监听本地回环的昇腾 NPU 实时监控台（支持 Web 看板、TUI、CLI/MCP 与 90 天利用率热力图） |
+| [`diagnostics`](https://github.com/mindie-agent/diagnostics) | **结构化诊断底座（`mindie-diagnostics`）**：无模型 4×1 MiB 本地 JSONL 轮转日志、离线脱敏支持包与可选白名单去重 GitHub Issue 故障上报 |
 
 ---
 
