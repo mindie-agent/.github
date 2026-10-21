@@ -91,19 +91,29 @@ MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文渐进式�
 | [`mindie-agent-kimi`](https://github.com/mindie-agent/mindie-agent-kimi) | **Kimi Code CLI 原生插件**（`v0.0.2` 已发布）：提供 `/mindie-agent` 统一入口、代数原子更新、远端 NPU 开发测试与知识闭环 |
 | [`mindie-agent-dsh`](https://github.com/mindie-agent/mindie-agent-dsh) | **DeepSeek Harness (DSH) 原生插件**（`v0.0.2` 已发布）：复用宿主插件机制组合提供 `/mindie-agent` Skill、领域知识检索、生命周期桥接与 `remote-dev` |
 
-### 3. 核心运行时组件与公共知识库（Core Runtimes & Public Knowledge Corpora）
+### 3. 核心运行时组件（Core Runtime Components）
 
 | 仓库 / Repository | 定位与核心用途 / What It Does |
 |---|---|
-| [`knowledge`](https://github.com/mindie-agent/knowledge) | **知识与经验引擎（`mindie-knowledge`）**：分级知识单元、条件检索、领域路由、精确修订反馈、双层隐私脱敏与经审核的社区发布闭环 |
-| [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) | **`vLLM-Ascend` 领域公共知识库**：带源码修订绑定、适用条件与实证证据的 `vLLM-Ascend` 特性开发、适配与调优知识单元 |
-| [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) | **昇腾算子领域公共知识库**：带源码修订绑定、适用条件与实证证据的 `AscendC`、`Triton` 与 CANN 算子实现及流水调优知识单元 |
+| [`knowledge`](https://github.com/mindie-agent/knowledge) | **知识与经验引擎（`mindie-knowledge`）**：L1–L4 分级知识单元、条件检索、多领域分片路由、精确修订反馈、双层隐私脱敏与经审核的社区发布闭环 |
 | [`remote-dev`](https://github.com/mindie-agent/remote-dev) | **SSH 远端开发引擎（`remote-dev`）**：远端文件读写、精确补丁、容器直连、受管持久后台作业与构建/测试产物同步 |
 | [`coordinator`](https://github.com/mindie-agent/coordinator) | **昇腾 NPU 环境协调器（`mindie-coordinator`）**：SSH 主机/免密/多机互通、就绪容器池绑定与开通、NPU/挂载探测（`mindie_probe`）、独占 NPU/端口租约仲裁（`mindie_lease`）与受管任务调度 |
 | [`profiler`](https://github.com/mindie-agent/profiler) | **昇腾实测性能剖析组件（`mindie-profiler`）**：昇腾 Profiling 受控采集、`inventory / analyze / correlate / compare / sql` 原地只读解析、显存证据提取与跨 Run 对比 CLI |
 | [`sim`](https://github.com/mindie-agent/sim) | **昇腾四层仿真与边界求解器（`mindie-sim`）**：多型号 A2/A3/A5 `DeviceCapabilityProfile`、7 类全路径 `D2D`/`H2D`/`D2H`/`RH2D`/`RD2H` 传输边界、算子微阶段周期依赖图求解、Phase 0 子图融合分析与整网并行推演 |
 | [`npu-top`](https://github.com/mindie-agent/npu-top) | **NPU 集群状态看板（`npu-top`）**：仅监听本地回环的昇腾 NPU 实时监控台（支持 Web 看板、TUI、CLI/MCP 与 90 天利用率热力图） |
-| [`diagnostics`](https://github.com/mindie-agent/diagnostics) | **结构化诊断底座（`mindie-diagnostics`）**：无模型 4×1 MiB 本地 JSONL 轮转日志、离线脱敏支持包与可选白名单去重 GitHub Issue 故障上报 |
+| [`diagnostics`](https://github.com/mindie-agent/diagnostics) | **结构化诊断底座（`mindie-diagnostics`）**：CANN/`plog` 确定性报错解析、4×1 MiB 本地 JSONL 轮转日志、离线脱敏支持包与可选白名单去重 GitHub Issue 故障上报 |
+
+### 4. 昇腾领域公共知识库（Public Domain Knowledge Corpora）
+
+| 仓库 / Repository | 定位与核心用途 / What It Does |
+|---|---|
+| [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) | **`vLLM-Ascend` 领域公共知识库（`vllm-ascend`）**：新模型 0day 接入、PD 分离、MoE EP/MC2、量化、投机解码与 ACLGraph/TorchAir 调优知识单元 |
+| [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) | **昇腾算子领域公共知识库（`operators`）**：910B/910C/950 硬件约束、`AscendC`、`Triton-Ascend`、TBE/AKG 编译排障与融合调优知识单元 |
+| [`knowledge-infer-core`](https://github.com/mindie-agent/knowledge-infer-core) | **推理服务与引擎核心知识库（`infer-core`）**：MindIE Server / Service / LLM / Motor 部署配置、Batch 调度、KV Cache 管理与多模态服务知识单元 |
+| [`knowledge-infer-distributed`](https://github.com/mindie-agent/knowledge-infer-distributed) | **分布式推理与集合通信知识库（`infer-distributed`）**：HCCL 通信排障、RoCE/HCCS 拓扑与 Ranktable 校验、SHMEM 及多机 DP/TP/EP/PP/CP 并行知识单元 |
+| [`knowledge-infer-observability`](https://github.com/mindie-agent/knowledge-infer-observability) | **推理可观测性、诊断与评测知识库（`infer-observability`）**：CANN/`plog`/Device 故障诊断、`msprof` 性能拆解、精度对齐与基准测量知识单元 |
+| [`knowledge-infer-ops-compat`](https://github.com/mindie-agent/knowledge-infer-ops-compat) | **图编译、算子注册与迁移兼容知识库（`infer-ops-compat`）**：TorchAir/ACLGraph 图捕获排障、自定义算子注册、CUDA 迁移适配与运行时兼容知识单元 |
+| [`knowledge-agent-engineering`](https://github.com/mindie-agent/knowledge-agent-engineering) | **Agent 工程与治理知识库（`agent-engineering`）**：多 Agent 协同编排、知识提炼治理、双层隐私脱敏门禁、CI 发布校验与基准评测知识单元 |
 
 ---
 
