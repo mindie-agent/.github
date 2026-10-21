@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.0.2.md"><img src="https://img.shields.io/badge/Release-v0.0.2-7045F5?style=flat-square" alt="Release v0.0.2"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.0.3.md"><img src="https://img.shields.io/badge/Release-v0.0.3-7045F5?style=flat-square" alt="Release v0.0.3"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-cc"><img src="https://img.shields.io/badge/Claude_Code-Plugin_Ready-D97757?style=flat-square" alt="Claude Code"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-codex"><img src="https://img.shields.io/badge/OpenAI_Codex-Plugin_Ready-10A37F?style=flat-square" alt="OpenAI Codex"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-kimi"><img src="https://img.shields.io/badge/Kimi_Code-Plugin_Ready-2563EB?style=flat-square" alt="Kimi Code"></a>
@@ -86,10 +86,10 @@ MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文渐进式�
 
 | 仓库 / Repository | 定位与核心用途 / What It Does |
 |---|---|
-| [`mindie-agent-cc`](https://github.com/mindie-agent/mindie-agent-cc) | **Claude Code 原生插件**（`v0.0.2` 已发布）：支持 macOS、原生 Windows 与 WSL |
-| [`mindie-agent-codex`](https://github.com/mindie-agent/mindie-agent-codex) | **OpenAI Codex CLI 原生插件**（`v0.0.2` 已发布）：支持 macOS、原生 Windows 与 WSL |
-| [`mindie-agent-kimi`](https://github.com/mindie-agent/mindie-agent-kimi) | **Kimi Code CLI 原生插件**（`v0.0.2` 已发布）：提供 `/mindie-agent` 统一入口、代数原子更新、远端 NPU 开发测试与知识闭环 |
-| [`mindie-agent-dsh`](https://github.com/mindie-agent/mindie-agent-dsh) | **DeepSeek Harness (DSH) 原生插件**（`v0.0.2` 已发布）：复用宿主插件机制组合提供 `/mindie-agent` Skill、领域知识检索、生命周期桥接与 `remote-dev` |
+| [`mindie-agent-cc`](https://github.com/mindie-agent/mindie-agent-cc) | **Claude Code 原生插件**（`v0.0.3` 已发布）：支持 macOS、原生 Windows 与 WSL |
+| [`mindie-agent-codex`](https://github.com/mindie-agent/mindie-agent-codex) | **OpenAI Codex CLI 原生插件**（`v0.0.3` 已发布）：支持 macOS、原生 Windows 与 WSL |
+| [`mindie-agent-kimi`](https://github.com/mindie-agent/mindie-agent-kimi) | **Kimi Code CLI 原生插件**（`v0.0.3` 已发布）：提供 `/mindie-agent` 统一入口、代数原子更新、远端 NPU 开发测试与知识闭环 |
+| [`mindie-agent-dsh`](https://github.com/mindie-agent/mindie-agent-dsh) | **DeepSeek Harness (DSH) 原生插件**（`v0.0.3` 已发布）：复用宿主插件机制组合提供 `/mindie-agent` Skill、领域知识检索、生命周期桥接与 `remote-dev` |
 
 ### 3. 核心运行时组件（Core Runtime Components）
 
