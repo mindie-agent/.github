@@ -10,16 +10,19 @@ This repository maintains the public GitHub organization profile, organization-w
 
 ## Repository Contents
 
-- [`profile/README.md`](profile/README.md): Organization profile rendered on [github.com/mindie-agent](https://github.com/mindie-agent).
+- [`profile/README.md`](profile/README.md): Organization profile rendered on [github.com/mindie-agent](https://github.com/mindie-agent), including the 21-repository ecosystem and version tables synchronized with [`channels/0.1.json`](https://github.com/mindie-agent/mindie-agent/blob/main/channels/0.1.json) via [`.github/scripts/sync_org_versions.py`](https://github.com/mindie-agent/mindie-agent/blob/main/.github/scripts/sync_org_versions.py).
 - [`CONTRIBUTING.en.md`](CONTRIBUTING.en.md) / [`CONTRIBUTING.md`](CONTRIBUTING.md): Organization-wide contribution guidelines and component ownership boundaries.
 - [`.github/ISSUE_TEMPLATE/cross-repo-change.md`](.github/ISSUE_TEMPLATE/cross-repo-change.md): Issue template for coordinating contract changes across multiple repositories.
 
-## Primary Entry Points
+## Primary Entry Points & Current Formal Versions
 
-- Product Entry & Architecture: [mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent)
-- Claude Code Plugin: [mindie-agent/mindie-agent-cc](https://github.com/mindie-agent/mindie-agent-cc)
-- OpenAI Codex Plugin: [mindie-agent/mindie-agent-codex](https://github.com/mindie-agent/mindie-agent-codex)
-- Kimi Code Plugin: [mindie-agent/mindie-agent-kimi](https://github.com/mindie-agent/mindie-agent-kimi)
-- DeepSeek Harness (DSH) Plugin: [mindie-agent/mindie-agent-dsh](https://github.com/mindie-agent/mindie-agent-dsh)
-- Evaluation & Live NPU Benchmark Suite: [mindie-agent/mindie-bench](https://github.com/mindie-agent/mindie-bench)
+<!-- mindie-org-versions:org-readme-en:start -->
+- Product Entry & Architecture: [mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent) ([`v0.1.4`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.4))
+- Claude Code Plugin: [mindie-agent/mindie-agent-cc](https://github.com/mindie-agent/mindie-agent-cc) ([`v0.1.10`](https://github.com/mindie-agent/mindie-agent-cc/releases/tag/v0.1.10))
+- OpenAI Codex Plugin: [mindie-agent/mindie-agent-codex](https://github.com/mindie-agent/mindie-agent-codex) ([`v0.1.13`](https://github.com/mindie-agent/mindie-agent-codex/releases/tag/v0.1.13))
+- Kimi Code Plugin: [mindie-agent/mindie-agent-kimi](https://github.com/mindie-agent/mindie-agent-kimi) ([`v0.1.10`](https://github.com/mindie-agent/mindie-agent-kimi/releases/tag/v0.1.10))
+- DeepSeek Harness (DSH) Plugin: [mindie-agent/mindie-agent-dsh](https://github.com/mindie-agent/mindie-agent-dsh) ([`v0.1.9`](https://github.com/mindie-agent/mindie-agent-dsh/releases/tag/v0.1.9))
+- Core Runtime Components: [`knowledge`](https://github.com/mindie-agent/knowledge) ([`v0.13.7`](https://github.com/mindie-agent/knowledge/releases/tag/v0.13.7)) · [`remote-dev`](https://github.com/mindie-agent/remote-dev) ([`v0.11.2`](https://github.com/mindie-agent/remote-dev/releases/tag/v0.11.2)) · [`coordinator`](https://github.com/mindie-agent/coordinator) ([`v0.7.0`](https://github.com/mindie-agent/coordinator/releases/tag/v0.7.0)) · [`profiler`](https://github.com/mindie-agent/profiler) ([`v0.5.3`](https://github.com/mindie-agent/profiler/releases/tag/v0.5.3)) · [`sim`](https://github.com/mindie-agent/sim) ([`v0.8.1`](https://github.com/mindie-agent/sim/releases/tag/v0.8.1)) · [`npu-top`](https://github.com/mindie-agent/npu-top) ([`v0.3.0`](https://github.com/mindie-agent/npu-top/releases/tag/v0.3.0)) · [`diagnostics`](https://github.com/mindie-agent/diagnostics) ([`v0.5.4`](https://github.com/mindie-agent/diagnostics/releases/tag/v0.5.4))
+- Evaluation & Live NPU Benchmark Suite: [mindie-agent/mindie-bench](https://github.com/mindie-agent/mindie-bench) ([`v0.4.5`](https://github.com/mindie-agent/mindie-bench/releases/tag/v0.4.5))
 - Ascend Agent Skills Catalogue: [mindie-agent/awesome-mindie-skills](https://github.com/mindie-agent/awesome-mindie-skills)
+<!-- mindie-org-versions:org-readme-en:end -->
