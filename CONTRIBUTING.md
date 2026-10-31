@@ -14,13 +14,13 @@
 | OpenAI Codex CLI 原生插件与 Hook / MCP 集成 | [`mindie-agent-codex`](https://github.com/mindie-agent/mindie-agent-codex) |
 | Kimi Code 原生适配插件与旁路原子更新 | [`mindie-agent-kimi`](https://github.com/mindie-agent/mindie-agent-kimi) |
 | DeepSeek Harness (DSH) 原生插件与工具桥接 | [`mindie-agent-dsh`](https://github.com/mindie-agent/mindie-agent-dsh) |
-| 知识同步、按信息缺口条件检索、隐私脱敏与反馈引擎 | [`knowledge`](https://github.com/mindie-agent/knowledge) |
-| SSH 远端文件工具、共享 SSH 凭据、容器执行与后台长作业 | [`remote-dev`](https://github.com/mindie-agent/remote-dev) |
-| 昇腾主机任务租约、就绪容器池与独占 NPU/端口调度服务 | [`coordinator`](https://github.com/mindie-agent/coordinator) |
-| 昇腾 `msprof` 原地只读解析、模型结构对齐与跨版本对比 | [`profiler`](https://github.com/mindie-agent/profiler) |
-| 五层因果性能建模、4D 效率拆解与 SLA 硬件配比推演 | [`sim`](https://github.com/mindie-agent/sim) |
-| 昇腾 NPU 集群只读状态监控（Web / TUI / CLI / MCP） | [`npu-top`](https://github.com/mindie-agent/npu-top) |
-| 结构化故障诊断、CANN/`plog` 分诊与可选白名单故障上报 | [`diagnostics`](https://github.com/mindie-agent/diagnostics) |
+| 知识同步、按信息缺口条件检索、批量 `refs` / `known_refs` / `token_budget` 精读、`rejected_history` / `affected_components` 溯源与脱敏引擎 | [`knowledge`](https://github.com/mindie-agent/knowledge) |
+| SSH 远端文件工具、共享 `~/.mindie/ssh/id_ed25519` 凭据回退、破坏性命令安全拦截门禁、容器执行与后台长作业 | [`remote-dev`](https://github.com/mindie-agent/remote-dev) |
+| 昇腾 A2/A3/A5 拓扑探测、HCCL/RoCE 预检、单 Die 显存租约预算与并发编译槽位及独占 NPU/端口调度服务 | [`coordinator`](https://github.com/mindie-agent/coordinator) |
+| 昇腾 `msprof` 原地只读解析、`analyze_profiling --structure` 三态拓扑对齐与 `auto_segment_decode_forwards` Decode 切分 | [`profiler`](https://github.com/mindie-agent/profiler) |
+| 五层因果性能建模（覆盖 `DP × TP × EP × PP × DCP / DSA-CP / PCP`）、4D 效率拆解、30ms SLA 硬件缩放求解与 856 用例校准 | [`sim`](https://github.com/mindie-agent/sim) |
+| 昇腾 A2/A3/A5 集群只读状态监控（Web / TUI / CLI / MCP，共享 `~/.mindie/ssh` 凭据回退） | [`npu-top`](https://github.com/mindie-agent/npu-top) |
+| 结构化故障诊断、CANN/`plog` 分诊与带 2 次有界外发对账重试的可选白名单故障上报 | [`diagnostics`](https://github.com/mindie-agent/diagnostics) |
 | 昇腾领域公共知识库（`vLLM-Ascend` / 算子 / 推理核心 / 分布式 / 可观测 / 图编译兼容 / Agent 工程） | [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) · [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) · [`knowledge-infer-core`](https://github.com/mindie-agent/knowledge-infer-core) · [`knowledge-infer-distributed`](https://github.com/mindie-agent/knowledge-infer-distributed) · [`knowledge-infer-observability`](https://github.com/mindie-agent/knowledge-infer-observability) · [`knowledge-infer-ops-compat`](https://github.com/mindie-agent/knowledge-infer-ops-compat) · [`knowledge-agent-engineering`](https://github.com/mindie-agent/knowledge-agent-engineering) |
 | 昇腾 AI Infra 独立 Agent Skills 精选目录 | [`awesome-mindie-skills`](https://github.com/mindie-agent/awesome-mindie-skills) |
 | `vllm` / `vllm-ascend` 本地多任务开发工作区脚手架 | [`vllm-ascend-workspace`](https://github.com/mindie-agent/vllm-ascend-workspace) |
