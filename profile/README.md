@@ -11,7 +11,7 @@
 
 <!-- mindie-org-versions:org-badges:start -->
 <p align="center">
-  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.11.md"><img src="https://img.shields.io/github/v/release/mindie-agent/mindie-agent?label=Release&color=7045F5&style=flat-square" alt="Release v0.1.11"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.12.md"><img src="https://img.shields.io/github/v/release/mindie-agent/mindie-agent?label=Release&color=7045F5&style=flat-square" alt="Release v0.1.12"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-cc"><img src="https://img.shields.io/badge/Claude_Code-Plugin_Ready-D97757?style=flat-square" alt="Claude Code"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-codex"><img src="https://img.shields.io/badge/OpenAI_Codex-Plugin_Ready-10A37F?style=flat-square" alt="OpenAI Codex"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-kimi"><img src="https://img.shields.io/badge/Kimi_Code-Plugin_Ready-2563EB?style=flat-square" alt="Kimi Code"></a>
@@ -23,7 +23,7 @@
 
 <p align="center">
   <a href="https://github.com/mindie-agent/mindie-agent"><b>项目主入口 (Main Repo)</b></a> ·
-  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.11.md"><b>v0.1.11 发布说明</b></a> ·
+  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.12.md"><b>v0.1.12 发布说明</b></a> ·
   <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.0.md"><b>v0.1.0 里程碑</b></a> ·
   <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.0/design-philosophy.md"><b>作者自述</b></a> ·
   <a href="https://github.com/mindie-agent/mindie-agent-cc"><b>Claude Code 插件</b></a> ·
@@ -98,7 +98,7 @@ MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文按需渐�
 
 | 仓库 / Repository | 当前版本 / Version | 定位与核心用途 / What It Does |
 |---|---|---|
-| [`mindie-agent`](https://github.com/mindie-agent/mindie-agent) | [`v0.1.11`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.11) | **总入口**：产品架构、工程设计原则、一句话 Agent 自动安装协议与统一版本记录 |
+| [`mindie-agent`](https://github.com/mindie-agent/mindie-agent) | [`v0.1.12`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.12) | **总入口**：产品架构、工程设计原则、一句话 Agent 自动安装协议与统一版本记录 |
 | [`mindie-bench`](https://github.com/mindie-agent/mindie-bench) | [`v0.4.6`](https://github.com/mindie-agent/mindie-bench/releases/tag/v0.4.6) | **真机基准与评测框架**：20 个行为级验证任务（109 项三态与辅助变体对照）、隔离宿主运行（原生知识评测接入与 `zsh` 临时目录隔离）、组件级基准与跨任务复用评测 |
 | [`awesome-mindie-skills`](https://github.com/mindie-agent/awesome-mindie-skills) | [`main`](https://github.com/mindie-agent/awesome-mindie-skills) | **开箱即用技能库**：覆盖昇腾 AI Infra 开发、测试、算子实现（`AscendC` / `Triton`）与 `vLLM-Ascend` 工程的精选 Agent Skills |
 | [`vllm-ascend-workspace`](https://github.com/mindie-agent/vllm-ascend-workspace) | [`main`](https://github.com/mindie-agent/vllm-ascend-workspace) | **本地多任务工作区**：一键拉起 `vllm` + `vllm-ascend` 独立 Git Worktree 的开发与测试脚手架 |
@@ -118,13 +118,13 @@ MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文按需渐�
 
 | 仓库 / Repository | Python 包 / Package | 当前版本 / Version | 定位与核心用途 / What It Does |
 |---|---|---|---|
-| [`knowledge`](https://github.com/mindie-agent/knowledge) | `mindie-knowledge` | [`v0.13.13`](https://github.com/mindie-agent/knowledge/releases/tag/v0.13.13) | **知识与经验引擎**：L1–L4 分级知识单元、按信息缺口条件检索、批量 `refs` 精读与共享 `known_refs` / `token_budget` 预算、`rejected_history` / `affected_components` 溯源、双层隐私脱敏与社区 PR 发布 |
+| [`knowledge`](https://github.com/mindie-agent/knowledge) | `mindie-knowledge` | [`v0.13.14`](https://github.com/mindie-agent/knowledge/releases/tag/v0.13.14) | **知识与经验引擎**：L1–L4 分级知识单元、按信息缺口条件检索、批量 `refs` 精读与共享 `known_refs` / `token_budget` 预算、`rejected_history` / `affected_components` 溯源、双层隐私脱敏与社区 PR 发布 |
 | [`remote-dev`](https://github.com/mindie-agent/remote-dev) | `remote-dev` | [`v0.11.6`](https://github.com/mindie-agent/remote-dev/releases/tag/v0.11.6) | **SSH 远端开发引擎**：远端文件读写、精确补丁、共享 `~/.mindie/ssh/id_ed25519` 凭据回退与密钥维护、破坏性命令安全拦截门禁、容器直连、受管后台作业与产物同步 |
 | [`coordinator`](https://github.com/mindie-agent/coordinator) | `mindie-coordinator` | [`v0.7.5`](https://github.com/mindie-agent/coordinator/releases/tag/v0.7.5) | **昇腾 NPU 环境协调器**：SSH 主机/多机互通、容器池开通与绑定、NPU 拓扑探测（兼容 A2/A3 双 Die/A5）、HCCL/RoCE 预检、单 Die 显存租约预算与并发编译槽位控制及端口防冲突 |
 | [`profiler`](https://github.com/mindie-agent/profiler) | `mindie-profiler` | [`v0.5.6`](https://github.com/mindie-agent/profiler/releases/tag/v0.5.6) | **昇腾实测性能剖析组件**：受控采集、`msprof` 原地只读解析（`inventory / analyze / correlate / compare / sql / camodel / kernels`）、`analyze_profiling --structure` 基于 `mindie-model-structure/1` 的三态拓扑对齐（`aligned / declared_only / unattributed_observed`）与 Decode/Prefill 自动切分 |
 | [`sim`](https://github.com/mindie-agent/sim) | `mindie-sim` | [`v0.9.4`](https://github.com/mindie-agent/sim/releases/tag/v0.9.4) | **五层因果性能建模组件**：统一建模硬件资源、算子族、子图、纯模型成本与服务约束（覆盖 `DP × TP × EP × PP × DCP / DSA-CP / PCP` 与 PD 分离），支持 `compose` Case 合成、`async_scheduling` 显存延迟释放、4D 效率拆解、SLA/PD Pareto 求解与 Wave 5 1,653 份 Profile 样本内校准及独立 856 例 DSH 集群评测 |
 | [`npu-top`](https://github.com/mindie-agent/npu-top) | `npu-top` | [`v0.3.1`](https://github.com/mindie-agent/npu-top/releases/tag/v0.3.1) | **NPU 集群状态看板**：支持 A2 / A3 / A5 集群监控、共享 `coordinator` 的 `machines.json` 与 `~/.mindie/ssh` 凭据回退，提供本地回环 Web 看板（`127.0.0.1:8788`）、TUI、CLI/MCP 与 90 天利用率热力图 |
-| [`diagnostics`](https://github.com/mindie-agent/diagnostics) | `mindie-diagnostics` | [`v0.5.7`](https://github.com/mindie-agent/diagnostics/releases/tag/v0.5.7) | **结构化诊断底座**：CANN/`plog` 确定性报错解析、4×1 MiB 本地 JSONL 轮转日志、离线脱敏支持包与带 2 次有界外发对账重试的可选白名单 GitHub Issue 故障上报 |
+| [`diagnostics`](https://github.com/mindie-agent/diagnostics) | `mindie-diagnostics` | [`v0.5.8`](https://github.com/mindie-agent/diagnostics/releases/tag/v0.5.8) | **结构化诊断底座**：CANN/`plog` 确定性报错解析、4×1 MiB 本地 JSONL 轮转日志、离线脱敏支持包与带 2 次有界外发对账重试的可选白名单 GitHub Issue 故障上报 |
 | [`debugger`](https://github.com/mindie-agent/debugger) | `mindie-debugger` | [`v0.1.0`](https://github.com/mindie-agent/debugger/releases/tag/v0.1.0) | **目标 NPU 故障分诊与精度调试组件**：CANN/`plog` 确定性报错解析（`npu_fault_triage`）、三原语精度/内存踩踏定位（`precision`）与 `ACLGraph` 图内重放 Dump / 捕获守卫 / 静态指针追踪（`aclgraph`） |
 
 ### 4. 昇腾领域公共知识库（Public Domain Knowledge Corpora）
