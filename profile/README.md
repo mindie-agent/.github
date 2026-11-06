@@ -11,7 +11,7 @@
 
 <!-- mindie-org-versions:org-badges:start -->
 <p align="center">
-  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.9.md"><img src="https://img.shields.io/github/v/release/mindie-agent/mindie-agent?label=Release&color=7045F5&style=flat-square" alt="Release v0.1.9"></a>
+  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.10.md"><img src="https://img.shields.io/github/v/release/mindie-agent/mindie-agent?label=Release&color=7045F5&style=flat-square" alt="Release v0.1.10"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-cc"><img src="https://img.shields.io/badge/Claude_Code-Plugin_Ready-D97757?style=flat-square" alt="Claude Code"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-codex"><img src="https://img.shields.io/badge/OpenAI_Codex-Plugin_Ready-10A37F?style=flat-square" alt="OpenAI Codex"></a>
   <a href="https://github.com/mindie-agent/mindie-agent-kimi"><img src="https://img.shields.io/badge/Kimi_Code-Plugin_Ready-2563EB?style=flat-square" alt="Kimi Code"></a>
@@ -23,7 +23,7 @@
 
 <p align="center">
   <a href="https://github.com/mindie-agent/mindie-agent"><b>项目主入口 (Main Repo)</b></a> ·
-  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.9.md"><b>v0.1.9 发布说明</b></a> ·
+  <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.10.md"><b>v0.1.10 发布说明</b></a> ·
   <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.0.md"><b>v0.1.0 里程碑</b></a> ·
   <a href="https://github.com/mindie-agent/mindie-agent/blob/main/docs/releases/0.1.0/design-philosophy.md"><b>作者自述</b></a> ·
   <a href="https://github.com/mindie-agent/mindie-agent-cc"><b>Claude Code 插件</b></a> ·
@@ -98,7 +98,7 @@ MindIE Agent 坚持**用户侧极简单一入口 + Agent 侧上下文按需渐�
 
 | 仓库 / Repository | 当前版本 / Version | 定位与核心用途 / What It Does |
 |---|---|---|
-| [`mindie-agent`](https://github.com/mindie-agent/mindie-agent) | [`v0.1.9`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.9) | **总入口**：产品架构、工程设计原则、一句话 Agent 自动安装协议与统一版本记录 |
+| [`mindie-agent`](https://github.com/mindie-agent/mindie-agent) | [`v0.1.10`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.10) | **总入口**：产品架构、工程设计原则、一句话 Agent 自动安装协议与统一版本记录 |
 | [`mindie-bench`](https://github.com/mindie-agent/mindie-bench) | [`v0.4.6`](https://github.com/mindie-agent/mindie-bench/releases/tag/v0.4.6) | **真机基准与评测框架**：20 个行为级验证任务（109 项三态与辅助变体对照）、隔离宿主运行（原生知识评测接入与 `zsh` 临时目录隔离）、组件级基准与跨任务复用评测 |
 | [`awesome-mindie-skills`](https://github.com/mindie-agent/awesome-mindie-skills) | [`main`](https://github.com/mindie-agent/awesome-mindie-skills) | **开箱即用技能库**：覆盖昇腾 AI Infra 开发、测试、算子实现（`AscendC` / `Triton`）与 `vLLM-Ascend` 工程的精选 Agent Skills |
 | [`vllm-ascend-workspace`](https://github.com/mindie-agent/vllm-ascend-workspace) | [`main`](https://github.com/mindie-agent/vllm-ascend-workspace) | **本地多任务工作区**：一键拉起 `vllm` + `vllm-ascend` 独立 Git Worktree 的开发与测试脚手架 |
