@@ -17,7 +17,7 @@
 ## 核心入口与当前正式版本
 
 <!-- mindie-org-versions:org-readme-zh:start -->
-- 产品总入口与架构文档：[mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent)（[`v0.1.9`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.9)）
+- 产品总入口与架构文档：[mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent)（[`v0.1.10`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.10)）
 - Claude Code 插件：[mindie-agent/mindie-agent-cc](https://github.com/mindie-agent/mindie-agent-cc)（[`v0.1.17`](https://github.com/mindie-agent/mindie-agent-cc/releases/tag/v0.1.17)）
 - OpenAI Codex 插件：[mindie-agent/mindie-agent-codex](https://github.com/mindie-agent/mindie-agent-codex)（[`v0.1.21`](https://github.com/mindie-agent/mindie-agent-codex/releases/tag/v0.1.21)）
 - Kimi Code 插件：[mindie-agent/mindie-agent-kimi](https://github.com/mindie-agent/mindie-agent-kimi)（[`v0.1.17`](https://github.com/mindie-agent/mindie-agent-kimi/releases/tag/v0.1.17)）

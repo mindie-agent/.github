@@ -17,7 +17,7 @@ This repository maintains the public GitHub organization profile, organization-w
 ## Primary Entry Points & Current Formal Versions
 
 <!-- mindie-org-versions:org-readme-en:start -->
-- Product Entry & Architecture: [mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent) ([`v0.1.9`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.9))
+- Product Entry & Architecture: [mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent) ([`v0.1.10`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.10))
 - Claude Code Plugin: [mindie-agent/mindie-agent-cc](https://github.com/mindie-agent/mindie-agent-cc) ([`v0.1.17`](https://github.com/mindie-agent/mindie-agent-cc/releases/tag/v0.1.17))
 - OpenAI Codex Plugin: [mindie-agent/mindie-agent-codex](https://github.com/mindie-agent/mindie-agent-codex) ([`v0.1.21`](https://github.com/mindie-agent/mindie-agent-codex/releases/tag/v0.1.21))
 - Kimi Code Plugin: [mindie-agent/mindie-agent-kimi](https://github.com/mindie-agent/mindie-agent-kimi) ([`v0.1.17`](https://github.com/mindie-agent/mindie-agent-kimi/releases/tag/v0.1.17))
