@@ -16,6 +16,7 @@ Welcome to the MindIE Agent open-source community! To make sure your Issue or Pu
 | DeepSeek Harness (DSH) native plugin and tool bridging | [`mindie-agent-dsh`](https://github.com/mindie-agent/mindie-agent-dsh) |
 | Google Antigravity native plugin and tool bridging | [`mindie-agent-agy`](https://github.com/mindie-agent/mindie-agent-agy) |
 | Tencent WorkBuddy (CodeBuddy Agent CLI) native plugin and connector bridging | [`mindie-agent-wb`](https://github.com/mindie-agent/mindie-agent-wb) |
+| OpenCode native plugin, dual-channel distribution, and session lease bridging | [`mindie-agent-oc`](https://github.com/mindie-agent/mindie-agent-oc) |
 | Knowledge sync, information-gap retrieval, batch `refs` / `known_refs` / `token_budget` explanation, `rejected_history` / `affected_components` provenance, and redaction engine | [`knowledge`](https://github.com/mindie-agent/knowledge) |
 | SSH remote file tools, shared `~/.mindie/ssh/id_ed25519` credential fallback, destructive-command safety guards, container execution, and background jobs | [`remote-dev`](https://github.com/mindie-agent/remote-dev) |
 | Ascend A2/A3/A5 topology probing, HCCL/RoCE preflight, per-Die HBM lease & compile slot budgets, and exclusive NPU/port scheduling | [`coordinator`](https://github.com/mindie-agent/coordinator) |

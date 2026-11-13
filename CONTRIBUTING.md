@@ -16,6 +16,7 @@
 | DeepSeek Harness (DSH) 原生插件与工具桥接 | [`mindie-agent-dsh`](https://github.com/mindie-agent/mindie-agent-dsh) |
 | Google Antigravity 原生插件与工具桥接 | [`mindie-agent-agy`](https://github.com/mindie-agent/mindie-agent-agy) |
 | Tencent WorkBuddy（CodeBuddy Agent CLI）原生插件与连接器桥接 | [`mindie-agent-wb`](https://github.com/mindie-agent/mindie-agent-wb) |
+| OpenCode 原生插件、双通道分发与会话租约桥接 | [`mindie-agent-oc`](https://github.com/mindie-agent/mindie-agent-oc) |
 | 知识同步、按信息缺口条件检索、批量 `refs` / `known_refs` / `token_budget` 精读、`rejected_history` / `affected_components` 溯源与脱敏引擎 | [`knowledge`](https://github.com/mindie-agent/knowledge) |
 | SSH 远端文件工具、共享 `~/.mindie/ssh/id_ed25519` 凭据回退、破坏性命令安全拦截门禁、容器执行与后台长作业 | [`remote-dev`](https://github.com/mindie-agent/remote-dev) |
 | 昇腾 A2/A3/A5 拓扑探测、HCCL/RoCE 预检、单 Die 显存租约预算与并发编译槽位及独占 NPU/端口调度服务 | [`coordinator`](https://github.com/mindie-agent/coordinator) |
