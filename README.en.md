@@ -17,11 +17,11 @@ This repository maintains the public GitHub organization profile, organization-w
 ## Primary Entry Points & Current Formal Versions
 
 <!-- mindie-org-versions:org-readme-en:start -->
-- Product Entry & Architecture: [mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent) ([`v0.1.16`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.16))
-- Claude Code Plugin: [mindie-agent/mindie-agent-cc](https://github.com/mindie-agent/mindie-agent-cc) ([`v0.1.30`](https://github.com/mindie-agent/mindie-agent-cc/releases/tag/v0.1.30))
-- OpenAI Codex Plugin: [mindie-agent/mindie-agent-codex](https://github.com/mindie-agent/mindie-agent-codex) ([`v0.1.38`](https://github.com/mindie-agent/mindie-agent-codex/releases/tag/v0.1.38))
-- Kimi Code Plugin: [mindie-agent/mindie-agent-kimi](https://github.com/mindie-agent/mindie-agent-kimi) ([`v0.1.31`](https://github.com/mindie-agent/mindie-agent-kimi/releases/tag/v0.1.31))
-- DeepSeek Harness (DSH) Plugin: [mindie-agent/mindie-agent-dsh](https://github.com/mindie-agent/mindie-agent-dsh) ([`v0.1.26`](https://github.com/mindie-agent/mindie-agent-dsh/releases/tag/v0.1.26))
+- Product Entry & Architecture: [mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent) ([`v0.1.17`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.17))
+- Claude Code Plugin: [mindie-agent/mindie-agent-cc](https://github.com/mindie-agent/mindie-agent-cc) ([`v0.1.31`](https://github.com/mindie-agent/mindie-agent-cc/releases/tag/v0.1.31))
+- OpenAI Codex Plugin: [mindie-agent/mindie-agent-codex](https://github.com/mindie-agent/mindie-agent-codex) ([`v0.1.39`](https://github.com/mindie-agent/mindie-agent-codex/releases/tag/v0.1.39))
+- Kimi Code Plugin: [mindie-agent/mindie-agent-kimi](https://github.com/mindie-agent/mindie-agent-kimi) ([`v0.1.32`](https://github.com/mindie-agent/mindie-agent-kimi/releases/tag/v0.1.32))
+- DeepSeek Harness (DSH) Plugin: [mindie-agent/mindie-agent-dsh](https://github.com/mindie-agent/mindie-agent-dsh) ([`v0.1.27`](https://github.com/mindie-agent/mindie-agent-dsh/releases/tag/v0.1.27))
 - Google Antigravity Plugin: [mindie-agent/mindie-agent-agy](https://github.com/mindie-agent/mindie-agent-agy) ([`v0.1.21`](https://github.com/mindie-agent/mindie-agent-agy/releases/tag/v0.1.21))
 - Tencent WorkBuddy Plugin: [mindie-agent/mindie-agent-wb](https://github.com/mindie-agent/mindie-agent-wb) ([`v0.1.19`](https://github.com/mindie-agent/mindie-agent-wb/releases/tag/v0.1.19))
 - OpenCode Plugin: [mindie-agent/mindie-agent-oc](https://github.com/mindie-agent/mindie-agent-oc) ([`v0.1.11`](https://github.com/mindie-agent/mindie-agent-oc/releases/tag/v0.1.11))
