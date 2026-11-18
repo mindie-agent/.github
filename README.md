@@ -17,11 +17,11 @@
 ## 核心入口与当前正式版本
 
 <!-- mindie-org-versions:org-readme-zh:start -->
-- 产品总入口与架构文档：[mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent)（[`v0.1.16`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.16)）
-- Claude Code 插件：[mindie-agent/mindie-agent-cc](https://github.com/mindie-agent/mindie-agent-cc)（[`v0.1.30`](https://github.com/mindie-agent/mindie-agent-cc/releases/tag/v0.1.30)）
-- OpenAI Codex 插件：[mindie-agent/mindie-agent-codex](https://github.com/mindie-agent/mindie-agent-codex)（[`v0.1.38`](https://github.com/mindie-agent/mindie-agent-codex/releases/tag/v0.1.38)）
-- Kimi Code 插件：[mindie-agent/mindie-agent-kimi](https://github.com/mindie-agent/mindie-agent-kimi)（[`v0.1.31`](https://github.com/mindie-agent/mindie-agent-kimi/releases/tag/v0.1.31)）
-- DeepSeek Harness (DSH) 插件：[mindie-agent/mindie-agent-dsh](https://github.com/mindie-agent/mindie-agent-dsh)（[`v0.1.26`](https://github.com/mindie-agent/mindie-agent-dsh/releases/tag/v0.1.26)）
+- 产品总入口与架构文档：[mindie-agent/mindie-agent](https://github.com/mindie-agent/mindie-agent)（[`v0.1.17`](https://github.com/mindie-agent/mindie-agent/releases/tag/v0.1.17)）
+- Claude Code 插件：[mindie-agent/mindie-agent-cc](https://github.com/mindie-agent/mindie-agent-cc)（[`v0.1.31`](https://github.com/mindie-agent/mindie-agent-cc/releases/tag/v0.1.31)）
+- OpenAI Codex 插件：[mindie-agent/mindie-agent-codex](https://github.com/mindie-agent/mindie-agent-codex)（[`v0.1.39`](https://github.com/mindie-agent/mindie-agent-codex/releases/tag/v0.1.39)）
+- Kimi Code 插件：[mindie-agent/mindie-agent-kimi](https://github.com/mindie-agent/mindie-agent-kimi)（[`v0.1.32`](https://github.com/mindie-agent/mindie-agent-kimi/releases/tag/v0.1.32)）
+- DeepSeek Harness (DSH) 插件：[mindie-agent/mindie-agent-dsh](https://github.com/mindie-agent/mindie-agent-dsh)（[`v0.1.27`](https://github.com/mindie-agent/mindie-agent-dsh/releases/tag/v0.1.27)）
 - Google Antigravity 插件：[mindie-agent/mindie-agent-agy](https://github.com/mindie-agent/mindie-agent-agy)（[`v0.1.21`](https://github.com/mindie-agent/mindie-agent-agy/releases/tag/v0.1.21)）
 - Tencent WorkBuddy 插件：[mindie-agent/mindie-agent-wb](https://github.com/mindie-agent/mindie-agent-wb)（[`v0.1.19`](https://github.com/mindie-agent/mindie-agent-wb/releases/tag/v0.1.19)）
 - OpenCode 插件：[mindie-agent/mindie-agent-oc](https://github.com/mindie-agent/mindie-agent-oc)（[`v0.1.11`](https://github.com/mindie-agent/mindie-agent-oc/releases/tag/v0.1.11)）
